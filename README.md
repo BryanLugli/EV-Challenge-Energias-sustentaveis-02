@@ -1,6 +1,6 @@
 # EV-Challenge-Energias-sustentaveis-02
 
-# GreenCharge ⚡🌱
+# GreenCharge 
 
 **EV Challenge 2026 — Energias Renováveis e Sustentabilidade — FIAP**
 
@@ -162,47 +162,4 @@ ODS atendidos:
 
 ---
 
-## Como rodar
 
-Não precisa instalar nada além do Python 3.10+. Sem bibliotecas externas.
-
-```bash
-# Clone o repositório
-git clone https://github.com/BryanLugli/Ev_Challenge_Solucoes_em_energias_renovaveis.git
-cd Ev_Challenge_Solucoes_em_energias_renovaveis
-
-# Rode a simulação
-python3 simulacao/greencharge_simulacao.py
-```
-
-O relatório aparece direto no terminal. Dois arquivos são gerados:
-
-- `dados/greencharge_historico_30dias.csv` — todos os 720 registros hora a hora
-- `relatorios/greencharge_relatorio_maio2026.json` — métricas consolidadas do período
-
-Para simular cenários diferentes, edite as constantes no início do script:
-
-```python
-CAPACIDADE_PAINEL_KWP   = 5.0    # aumente para ver mais aproveitamento solar
-NUM_PONTOS_RECARGA      = 4      # número de carregadores no local
-DIAS_SIMULACAO          = 30     # quantos dias simular
-TARIFA_KWHE             = 0.85   # R$/kWh da distribuidora local
-```
-
----
-
-## Estrutura do repositório
-
-```
-Ev_Challenge_Solucoes_em_energias_renovaveis/
-│
-├── README.md
-├── simulacao/
-│   └── greencharge_simulacao.py        ← roda aqui
-├── dados/
-│   └── greencharge_historico_30dias.csv
-└── relatorios/
-    └── greencharge_relatorio_maio2026.json
-```
-
----
